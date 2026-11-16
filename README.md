@@ -107,6 +107,14 @@ row is a mean over 1,800 rendered views. Numbers are in `results/01_capture_rig/
 
 ![PSNR at held-out views against each capture factor](results/01_capture_rig/capture_rig.png)
 
+![Reference and reconstructions at one held-out view](results/01_capture_rig/examples.png)
+
+One held-out viewpoint of three sequences: the reference render of the full point cloud, then the splat
+reconstruction from 2, 3, 4 and 6 cameras, and from 4 cameras when two of them deliver a frame 80 ms late. The
+value under each image is its PSNR against the reference for that single frame. With two cameras the sides of
+the body are missing; a lagging camera pair doubles the moving limbs. Images are renders of UVG-VPC sequences
+(Gautier et al., QoMEX 2023), shown under the dataset's research licence.
+
 | Condition | PSNR (dB) | PSNR, person region (dB) | SSIM | LPIPS | Person left uncovered |
 |---|---|---|---|---|---|
 | 2 cameras | 18.90 | 11.87 | 0.888 | 0.091 | 19.97 % |
@@ -180,6 +188,7 @@ python scripts/fetch_uvg_vpc.py --out $LOSSYSPLAT_STORE/data/uvg_vpc
 python -m pytest tests
 python experiments/01_capture_rig/run.py
 python experiments/01_capture_rig/plot.py
+python experiments/01_capture_rig/figure.py
 ```
 
 The download is about 1 GB after packing. Experiment 01 takes about five minutes on one GPU.
