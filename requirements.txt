@@ -1,0 +1,6 @@
+torch
+torchvision
+numpy
+lpips
+matplotlib
+pytest
