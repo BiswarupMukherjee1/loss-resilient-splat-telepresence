@@ -2,9 +2,9 @@
 
 Concealing network packet loss in a multi-camera 3D video call with masked discrete diffusion.
 
-Status: work in progress. The capture and rendering stages are implemented and measured (experiment 01 below);
-the codec, the loss simulation and the concealment model are being built. Code and results are added stage by
-stage (see [Status](#status)).
+Status: The capture and rendering stages are implemented and measured (experiment 01 below);
+the codec, the loss simulation and the concealment model, Code and results are added stage by
+stage.
 
 ## The problem
 
