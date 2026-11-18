@@ -1,4 +1,4 @@
-# Loss-resilient Gaussian-splat telepresence
+# Multi-Camera 3D Video Call: Loss-resilient Gaussian-splat telepresence
 
 Concealing network packet loss in a multi-camera 3D video call with masked discrete diffusion.
 
